@@ -1,0 +1,8 @@
+{
+  "name": "linkx-seo",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "serve .",
+    "build": "echo 'static'"
+  }
+}
