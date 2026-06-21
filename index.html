@@ -1,53 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head><meta charset="UTF-8"><title>LinkX 出海情报</title>
-<meta name="description" content="LinkX 东南亚出海情报系统 — 实时高薪岗位与风控雷达">
-<meta name="keywords" content="东南亚求职,出海,柬埔寨工作,越南IT,新加坡EP,LinkX">
+<meta name="description" content="LinkX 东南亚出海情报 — 实时高薪岗位与风控雷达">
+<meta name="keywords" content="东南亚求职,出海,柬埔寨工作,越南IT,新加坡EP">
 <script src="https://cdn.tailwindcss.com"></script></head>
 <body class="bg-gray-950 text-gray-100 min-h-screen">
 <header class="border-b border-gray-800 p-6 text-center">
 <h1 class="text-2xl font-bold">🧬 LinkX 出海情报</h1>
 <p class="text-gray-500 text-sm mt-1">OSINT · AI 清洗 · 风险雷达</p>
+<div class="mt-4"><a href="/content/posts/" class="text-indigo-400 hover:text-indigo-300 text-sm underline">浏览全部文章 →</a></div>
 </header>
-<main class="max-4xl mx-auto p-6">
-<h2 class="text-lg font-semibold mb-4">📄 最新情报</h2>
-<div id="posts" class="space-y-3"></div>
+<main class="max-w-4xl mx-auto p-6">
+<h2 class="text-lg font-semibold mb-4">📄 近期深度分析</h2>
+<div class="space-y-3">
+<a href="/content/posts/2026-06-20-越南市场异动新兴商机与挑战并存.md" class="block bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-indigo-500 transition font-semibold">🇻🇳 越南市场异动：新兴商机与挑战并存</a>
+<a href="/content/posts/2026-06-20-越南出海情报洞察市场异动与未来发展.md" class="block bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-indigo-500 transition">🇻🇳 越南出海情报：洞察市场异动与未来发展</a>
+<a href="/content/posts/2026-06-20-越南出海市场异动人才需求与技术发展趋势.md" class="block bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-indigo-500 transition">🇻🇳 越南出海市场异动：人才需求与技术发展趋势</a>
+<a href="/content/posts/2026-06-20-柬埔寨出海市场异动与人才需求洞察.md" class="block bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-indigo-500 transition">🇰🇭 柬埔寨出海市场异动与人才需求洞察</a>
+<a href="/content/posts/2026-06-20-柬埔寨出海把握人力资源与市场机遇.md" class="block bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-indigo-500 transition">🇰🇭 柬埔寨出海把握人力资源与市场机遇</a>
+</div>
 </main>
-<script>
-async function load(){
-// Try to list posts from the repo
-const posts = [
-"2026-06-19-linkx-出海情报.md",
-"2026-06-19-accounting-manager.md",
-"2026-06-19-internal-audit-officer.md",
-"2026-06-19-secretary-personal-assistant.md",
-"2026-06-19-tax-account.md",
-"2026-06-18-early-years-teacher-computing-and-ict-t.md",
-"2026-06-18-it-and-computer-teacher.md",
-"2026-06-18-khmer-language-instructor.md",
-"2026-06-18-various-positions.md",
-"2026-06-18-sub-editor.md",
-"2026-06-18-program-advisor.md",
-"2026-06-18-project-officer.md",
-"2026-06-18-provincial-operation-officers.md",
-"2026-06-18-fundraising-coordinator-business-develo.md",
-"2026-06-18-logistics-procurement-assistant.md",
-"2026-06-18-administrative-coordinator.md",
-"2026-06-18-campus-manager.md",
-"2026-06-18-consultancy-to-conduct-the-final-evaluat.md",
-"2026-06-18-entrepreneurship-ecosystem-specialist-a.md",
-"2026-06-18-invitation-for-quotation-project-ecosys.md",
-"2026-06-19-ផ្នក-រដ្ឋបាល.md",
-"2026-06-19-带服状态总.md",
-];
-const container = document.getElementById('posts');
-for(const name of posts){
-const title = name.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace('.md','').replace(/[-_]/g,' ');
-container.innerHTML += `<a href="/content/posts/${name}" class="block bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-indigo-500 transition">${title}</a>`;
-}
-}
-load();
-</script>
 <footer class="text-center text-gray-600 text-xs mt-8 p-4 border-t border-gray-800">
 <p>数据由 LinkX AI 系统自动采集与清洗 · <a href="https://t.me/HelixOpsBot?start=seo_lead" class="text-indigo-400">Telegram Bot</a></p>
 </footer>
